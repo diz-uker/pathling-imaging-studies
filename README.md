@@ -5,7 +5,7 @@ Dieses containerisierte Tool startet alle notwendigen Abhängigkeiten von Pathli
 ## Abhängigkeiten installieren
 
 ```
-python3 pip install requirements.txt
+python3 pip install -r requirements.txt
 ```
 
 ## Ausführung
