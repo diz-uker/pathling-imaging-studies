@@ -1,6 +1,6 @@
 # Pathling Auswertungen zu FHIR ImagingStudies
 
-Dieses containerisierte Tool startet alle notwendigen Abhängigkeiten von Pathling und führt ein Analyseskript aus. Dabei liest das Tool FHIR Resourcen aus einem konfigurierbaren Kafka-Topic aus und speichert alle Analyseergebnisse in csv Dateien im Ordner òutput/` ab.
+Dieses containerisierte Tool startet alle notwendigen Abhängigkeiten von Pathling und führt ein Analyseskript aus. Dabei liest das Tool FHIR Resourcen aus einem konfigurierbaren Kafka-Topic aus und speichert alle Analyseergebnisse in csv Dateien im Ordner `output/` ab.
 
 ## Abhängigkeiten installieren
 
