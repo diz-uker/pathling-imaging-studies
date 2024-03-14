@@ -1,0 +1,15 @@
+services:
+  imaging-study-analysis:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      OUTPUT_FOLDER: "/opt/bitnami/spark/opal-output/"
+      OUTPUT_FILENAME: "analysis-results.csv"
+      KAFKA_TOPIC_YEAR_SUFFIX: ""
+      KAFKA_BOOTSTRAP_SERVER:
+      KAFKA_IMAGING_STUDY_TOPIC: "fhir.pacs.imagingStudy"
+      PARTITION_A: "0"  # change this to iteratively move through all 12 partitions
+      PARTITION_B: "1"  # change this to iteratively move through all 12 partitions
+    volumes:
+      - ${PWD}/output:/opt/bitnami/spark/opal-output
